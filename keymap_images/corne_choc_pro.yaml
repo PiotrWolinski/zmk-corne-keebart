@@ -221,8 +221,8 @@ layers:
   - RGB BRD
   - RGB BRI
   - RGB TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&status_bat'
+  - '&status_bt'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
