@@ -187,8 +187,8 @@
     status_leds {
         compatible = "zmk,status-leds";
         led-strip = <&led_strip>;
-        battery-leds = <17 12 11 4 3>;
-        bt-leds = <16 13 10 11 7 2>;
+        battery-leds = <18 17 12 11 4 3>;
+        bt-leds = <16 13 10 11 5 2>;
     };
 };
 
