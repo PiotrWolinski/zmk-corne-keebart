@@ -194,7 +194,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&status_discover'
+  - '&led_discover'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
