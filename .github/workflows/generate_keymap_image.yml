@@ -1,45 +1,20 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Generate keymap svg
-
+name: Draw ZMK keymaps
 on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
+  workflow_dispatch:  # can be triggered manually
+  push:               # automatically run on changes to following paths
+    paths:
+      - "config/corne_choc_pro.keymap"
+      - "keymap_drawer.config.yaml"
+      - 'boards/arm/corne_choc_pro/corne_choc_pro.keymap'
 
 jobs:
-  add_keymap:
-    runs-on: ubuntu-latest
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
-      contents: write 
-    steps:
-      - uses: actions/checkout@v4
-      - run: git config --global user.email "github-action@users.noreply.github.com"
-      - run: git config --global user.name github-actions[bot]
-      - name: Prepare python
-        uses: actions/setup-python@v5
-        with:
-            python-version: 3.12
-      - name: Install keymap drawer
-        run: |
-            python3 -m pip install keymap-drawer
-      - run: rm keymap_image.svg
-        continue-on-error: true
-      - run: keymap parse -c 12 -z ${GITHUB_WORKSPACE}/config/corne_choc_pro.keymap > corne_choc_pro.yaml
-      - run: keymap draw corne_choc_pro.yaml > keymap_image.svg
-      - run: rm corne_choc_pro.yaml
-      - name: Check for changes
-        run: git status
-      - name: Stage changed files
-        run: git add keymap_image.svg
-      - name: Commit changed files
-        run: |
-          if git diff --cached --quiet; then
-            echo "No keymap image changes to commit."
-          else
-            git commit -m "[BOT] Generate keymap svg."
-          fi
-      - name: Fetch from master
-        run: git fetch origin main
-      - name: Push code to main
-        run: git push origin HEAD:main
+      contents: write  # allow workflow to commit to the repo
+    with:
+      keymap_patterns: "config/corne_choc_pro.keymap"
+      config_path: "keymap_drawer.config.yaml"
+      output_folder: "keymap_images"
+      parse_args: ""
+      draw_args: ""
