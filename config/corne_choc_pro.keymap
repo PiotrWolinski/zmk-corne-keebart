@@ -267,7 +267,7 @@
         system_layer {
             display-name = "SYSTEM";
             bindings = <
-&bootloader     &trans           &trans           &trans           &trans        &status_discover        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader     &trans           &trans           &trans           &trans        &led_discover        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &studio_unlock  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &status_bat   &status_bt                    &trans  &trans  &trans  &trans  &trans  &trans
                                                   &trans           &trans        &trans                        &trans  &trans  &trans
