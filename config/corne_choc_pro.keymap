@@ -14,7 +14,7 @@
 #define LOWER   1
 #define RAISE   2
 #define FUNC    3
-#define NAV     4
+#define SYS     4
 
 / {
     behaviors {
@@ -173,6 +173,11 @@
         tmux_leader_right {
             bindings = <&kp LC(SPACE)>;
             key-positions = <23 24>;
+        };
+
+        sys_layer {
+            bindings = <&mo 4>;
+            key-positions = <7 21>;
         };
     };
 };
