@@ -232,3 +232,9 @@ Corne Choc Pro supports four encoder definitions:
 Sofle Choc Pro uses one encoder for volume and the other for previous/next
 media track. The encoder actions are available on its default, Lower, and
 Raise layers.
+
+## Keymap image
+
+Keymap is automatically generated via github action on every push using very nice visualization package called [keymap-drawer](https://github.com/caksoylar/keymap-drawer), so I can be sure that it is up to date.
+
+![keymap](keymap_images/corne_choc_pro.svg "Current keymap")
