@@ -399,6 +399,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 321)" class="layer-NUMBER">
@@ -671,6 +676,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 643)" class="layer-SYMBOL">
@@ -939,6 +949,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 964)" class="layer-FUNC">
@@ -1190,6 +1205,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1285)" class="layer-SYSTEM">
@@ -1223,9 +1243,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(476, 69)" class="key trans keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(476, 69)" class="key held keypos-7">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(532, 41)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1284,9 +1303,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(476, 125)" class="key trans keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(476, 125)" class="key held keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(532, 97)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1456,6 +1474,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1606)" class="layer-MOUSE">
@@ -1730,6 +1753,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1928)" class="layer-EXTRA 3">
@@ -1983,6 +2011,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2249)" class="layer-EXTRA 4">
@@ -2236,6 +2269,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2570)" class="layer-EXTRA 5">
@@ -2489,6 +2527,11 @@ path.combo {
 <tspan x="616" dy="-0.6em">Ctl+</tspan><tspan x="616" dy="1.2em">SPACE</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<a href="#SYSTEM">
+<text x="476" y="97" class="combo tap layer-activator">SYSTEM</text>
+</a></g>
 </g>
 </g>
 </svg>
