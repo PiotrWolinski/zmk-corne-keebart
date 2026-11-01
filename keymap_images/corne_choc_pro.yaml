@@ -46,7 +46,7 @@ layers:
   - {t: SPACE, h: SYMBOL}
   - {t: RET, h: NUMBER}
   - BSPC
-  - DEL
+  - {t: DEL, h: MOUSE}
   NUMBER:
   - {t: ▽, type: trans}
   - '1'
@@ -239,10 +239,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - '&msc SCRL_UP'
   - '&mkp LCLK'
@@ -252,11 +252,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MCLK'
   - '&mkp RCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - '&mmv MOVE_LEFT'
@@ -267,8 +267,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_LEFT'
@@ -279,9 +279,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   EXTRA 3:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -447,7 +447,7 @@ combos:
 - p: [41, 42]
   k: Sft+Ctl+LALT
 - p: [43, 44]
-  k: MOUSE
+  k: Alt+Sft+LCTRL
 - p: [19, 18]
   k: Ctl+LALT
 - p: [18, 32]
