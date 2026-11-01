@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors/status_leds.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <behaviors/status_leds.dtsi>
 
 #define DEFAULT 0
 #define LOWER   1
@@ -88,38 +88,31 @@
         combo_cmd_right {
             bindings = <&kp LGUI>;
             key-positions = <9 23>;
-            timeout-ms = <60>;
         };
 
         combo_ctrl_right {
             bindings = <&kp LCTRL>;
             key-positions = <10 24>;
-            timeout-ms = <60>;
         };
 
         combo_shift_right {
             bindings = <&kp LSHFT>;
             key-positions = <26 12>;
-            timeout-ms = <60>;
         };
 
         combo_cmd_left {
             bindings = <&kp LGUI>;
             key-positions = <4 18>;
-            timeout-ms = <60>;
-            layers = <0 1 2>;
         };
 
         combo_ctrl_left {
             bindings = <&kp LCTRL>;
             key-positions = <3 17>;
-            timeout-ms = <60>;
         };
 
         combo_shift_left {
             bindings = <&kp LSHFT>;
             key-positions = <15 1>;
-            timeout-ms = <60>;
         };
 
         combo_alt_left {
@@ -147,23 +140,19 @@
             key-positions = <41 42>;
         };
 
-        meh_right {
-            bindings = <&kp LS(LA(LCTRL))>;
+        combo_mouse_layer {
+            bindings = <&mo 5>;
             key-positions = <43 44>;
         };
 
         combo_alt_ctrl_left {
             bindings = <&kp LC(LALT)>;
             key-positions = <19 18>;
-            timeout-ms = <60>;
-            layers = <0 1 2>;
         };
 
         combo_alt_ctrl_shft_left {
             bindings = <&kp LC(LS(LALT))>;
             key-positions = <18 32>;
-            timeout-ms = <60>;
-            layers = <0 1 2>;
         };
 
         tmux_leader_left {
@@ -206,10 +195,10 @@
             //                    | CTRL| LGUI| SPC |               | ENT | RSE  | DEL |
 
             bindings = <
-&ht LGUI ESC  &kp Q  &kp W  &kp F      &kp P     &kp B               &kp C_MUTE  &kp C_PP  &kp J             &kp L     &kp U         &kp Y    &kp SEMI  &key_repeat
-&ht LALT TAB  &kp A  &kp R  &kp S      &kp T     &kp G               &kp LALT    &kp RALT  &kp M             &kp N     &kp E         &kp I    &kp O     &kp SQT
-&kp LSHFT     &kp Z  &kp X  &kp C      &kp D     &kp V                                     &kp K             &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp RSHIFT
-                            &kp LCTRL  &kp LGUI  &lt_hp RAISE SPACE                        &lt_hp LOWER RET  &kp BSPC  &lt_hp 5 DEL
+&ht LGUI ESC  &kp Q  &kp W  &kp F      &kp P     &kp B               &kp LCTRL  &kp C_PP  &kp J             &kp L     &kp U      &kp Y    &kp SEMI  &key_repeat
+&ht LALT TAB  &kp A  &kp R  &kp S      &kp T     &kp G               &kp LALT   &kp RALT  &kp M             &kp N     &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT     &kp Z  &kp X  &kp C      &kp D     &kp V                                    &kp K             &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                            &kp LCTRL  &kp LGUI  &lt_hp RAISE SPACE                       &lt_hp LOWER RET  &kp BSPC  &kp DEL
             >;
         };
 
@@ -267,20 +256,20 @@
         system_layer {
             display-name = "SYSTEM";
             bindings = <
-&bootloader     &trans           &trans           &trans           &trans        &led_discover        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&studio_unlock  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &status_bat   &status_bt                    &trans  &trans  &trans  &trans  &trans  &trans
-                                                  &trans           &trans        &trans                        &trans  &trans  &trans
+&bootloader     &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans           &trans        &led_discover  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&studio_unlock  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &status_bat   &status_bt                     &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &trans           &trans        &trans                         &trans  &trans  &trans
             >;
         };
 
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mkp RCLK        &mkp MCLK     &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans          &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans        &trans           &trans
-                        &trans  &trans  &trans                  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &msc SCRL_UP    &mkp LCLK       &mkp RCLK        &mkp MCLK     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans          &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans        &trans           &trans
+                        &trans  &trans  &trans                     &trans          &trans          &trans
             >;
         };
 
